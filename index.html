@@ -90,24 +90,22 @@
             height: 150px;
         }
 
-        .cta-button {
-            center: 15px;
-        }
-
-        .cta-button {
-            position: fixed;
-            bottom: 20px;
-            padding: 10px 20px;
-            color: #000;
-            background-color: #FFA500;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            z-index: 1000;
-            animation: color-change 3s infinite, pulse 1.5s infinite;
-        }
-
+        
+        .cta-button { 
+  position: fixed; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 10px 20px; 
+  color: #000; 
+  background-color: #FFA500; 
+  text-align: center; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  z-index: 1000; 
+  animation: color-change 3s infinite, pulse 1.5s infinite; 
+}
 
         @keyframes color-change {
             0% { background-color: #00FFFF; }
@@ -213,8 +211,9 @@
             </div>
         </div>
     </div>
-    
-    <a class="cta-button" href="https://contoh.com"><b>Gabung Sekarang</b></a>
 
+    <div>
+    <a class="cta-button" href="https://contoh.com"><b>Gabung Sekarang</b></a>
+</div>
 </body>
 </html>
