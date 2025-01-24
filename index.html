@@ -14,27 +14,48 @@
         }
 
         header {
-            background: linear-gradient(to bottom, #FF4500, #FFD700);
-            padding: 10px 0;
             text-align: center;
-            color: #fff;
             font-size: 2em;
             font-weight: bold;
-            text-shadow: 2px 2px 4px #000;
+            font-family: 'Rubik', sans-serif;
+            color: #000;
+            text-shadow: 1px 1px 1px #fff;
+            background: linear-gradient(to bottom, #ff4500, #FFD700); /* Gradiasi biru dongker ke terang */
+            padding: 6.5px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
         }
 
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
-            background: #FFD700;
+            gap: 10px;
+            background: linear-gradient(to bottom, #Ff1493, #FF69b4); /* Gradiasi biru dongker ke terang */
+            padding: 1.5px;
+            border: 0px solid #Ff1493, #FF69b4;
+            position: sticky;
+            top: 60px;
+            z-index: 700;
         }
 
         nav a {
+            display: block;
+            background: linear-gradient(to bottom, #Ff1493, #FF69b4); /* Gradiasi biru dongker ke terang */
+            border: 2px solid #Ff1493, #FF69b4;
+            padding: 2px 10px;
+            color: #0000cd;
             text-decoration: none;
-            color: #333;
+            font-size: 1.0em;
             font-weight: bold;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: linear-gradient(to bottom, #0000ff, #0000ff); /* Gradiasi biru dongker ke terang */
+            color: #FFFFFF;
         }
 
         .hero {
@@ -60,7 +81,7 @@
 
         .content h3 {
             color: #FF4500;
-            margin-bottom: 20px;
+            text-align: center;
         }
 
         .team img {
@@ -152,22 +173,30 @@
         </ul>
     </div>
 
+    <div class="content">
+        <h3>Tempat</h3>
+        <ul>
+            <li>Alamat Kantor: Kota Bogor, Jl Cifor Rt 003/008 Kel. Bubulak Bogor Barat.</li>
+            <li>Email: smartaffiliatee@gmail.com</li>
+        </ul>
+    </div>
+
     <div class="content team">
         <h3>Tim Kami</h3>
         <div style="display: flex; gap: 20px; justify-content: center;">
             <div>
                 <img src="https://via.placeholder.com/150" alt="CEO">
-                <p><b>Nama CEO</b></p>
+                <p><b>Hilman Hayatulloh</b></p>
                 <p>CEO & Founder</p>
             </div>
             <div>
                 <img src="https://via.placeholder.com/150" alt="CTO">
-                <p><b>Nama CTO</b></p>
+                <p><b>Syaiful Bahri</b></p>
                 <p>CTO & Co-Founder</p>
             </div>
             <div>
                 <img src="https://via.placeholder.com/150" alt="CMO">
-                <p><b>Nama CMO</b></p>
+                <p><b>Muhammad Mukhlis</b></p>
                 <p>CMO & Marketing Head</p>
             </div>
         </div>
