@@ -90,22 +90,28 @@
             height: 150px;
         }
 
-        
-        .cta-button { 
-  position: fixed; 
-  bottom: 5px; 
-  left: 70%; 
-  transform: translateX(-50%); 
-  padding: 10px 20px; 
-  color: #000; 
-  background-color: #FFA500; 
-  text-align: center; 
-  text-decoration: none; 
-  border-radius: 5px; 
-  font-weight: bold; 
-  z-index: 1000; 
-  animation: color-change 3s infinite, pulse 1.5s infinite; 
-}
+        .cta-button,
+        .login-button {
+            position: fixed;
+            bottom: 10px;
+            padding: 10px 20px;
+            color: #000;
+            background-color: #FFA500;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 1000;
+            animation: color-change 3s infinite, pulse 1.5s infinite;
+        }
+
+        .cta-button {
+            right: 10px;
+        }
+
+        .login-button {
+            left: 20px;
+        }
 
         @keyframes color-change {
             0% { background-color: #00FFFF; }
@@ -113,19 +119,15 @@
             66% { background-color: #7FFF00; }
             100% { background-color: #9400D3; }
         }
-            
+
         @keyframes pulse {
-            0% {
+            0%, 100% {
                 transform: scale(1);
-                background-color: #FFA500;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             }
             50% {
                 transform: scale(1.1);
-                background-color: #FFD700;
-            }
-            100% {
-                transform: scale(1);
-                background-color: #FFA500;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
             }
         }
     </style>
