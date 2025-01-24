@@ -62,12 +62,12 @@
             text-align: center;
             padding: 50px 20px;
             background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
-            color: #fff;
-            text-shadow: 2px 2px 5px #000;
+            color: #000;
+            text-shadow: 2px 2px 5px #fff;
         }
 
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 3em;
         }
 
         .content {
@@ -102,9 +102,16 @@
             text-decoration: none;
             font-size: 1.2em;
             border-radius: 5px;
-            animation: pulse 1s infinite;
+            animation: color-change 3s infinite, pulse 1s infinite;
         }
 
+        @keyframes color-change {
+            0% { background-color: #00FFFF; }
+            33% { background-color: #FFA500; }
+            66% { background-color: #7FFF00; }
+            100% { background-color: #9400D3; }
+        }
+            
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -126,10 +133,11 @@
         Profil Smart Affiliate Future
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Profil</a>
-        <a href="#">Produk</a>
-        <a href="#">Kontak</a>
+        <a href="https://contoh.com">Home</a>
+        <a href="https://contoh.com">Profil</a>
+        <a href="https://contoh.com">Produk</a>
+        <a href="https://contoh.com">Legalitas</a>
+        <a href="https://contoh.com">Komisi</a>
     </nav>
 
     <div class="hero">
@@ -203,7 +211,7 @@
     </div>
 
     <div class="cta">
-        <a href="#">Gabung Sekarang</a>
+        <a href="https://contoh.com"><b>Gabung Sekarang</b></a>
     </div>
 </body>
 </html>
